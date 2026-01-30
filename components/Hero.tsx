@@ -64,7 +64,7 @@ const Hero: React.FC = () => {
               transition
             "
           >
-            Work at TerraForm
+            Work at pgs-varaha
           </button>
         </div>
       </div>
@@ -80,7 +80,7 @@ const Hero: React.FC = () => {
           <div className="relative bg-white w-full max-w-md mx-4 p-6 rounded-lg shadow-2xl">
             <div className="flex justify-between items-center mb-4">
               <h2 className="text-lg font-semibold text-gray-900">
-                Partner with TerraForm
+                Partner with pgs-varaha
               </h2>
               <button
                 onClick={() => setOpenPartner(false)}
@@ -109,7 +109,7 @@ const Hero: React.FC = () => {
           <div className="relative bg-white w-full max-w-md mx-4 p-6 rounded-lg shadow-2xl">
             <div className="flex justify-between items-center mb-4">
               <h2 className="text-lg font-semibold text-gray-900">
-                Careers at TerraForm
+                Careers at pgs-varaha
               </h2>
               <button
                 onClick={() => setOpenCareers(false)}

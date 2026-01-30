@@ -1,5 +1,5 @@
 {
-  "name": "terraform-climate",
+  "name": "pgs-varaha-climate",
   "private": true,
   "version": "0.0.0",
   "type": "module",

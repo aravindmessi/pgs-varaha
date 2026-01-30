@@ -1,30 +1,31 @@
 import React from 'react';
+import ContentBlock from './ContentBlock';
 
 const founders = [
   {
-    name: 'Founder One',
+    name: 'Arjun Reddy',
     role: 'Co-founder & CEO',
-    image: 'https://picsum.photos/seed/f1/600/700',
+    image: 'https://images.unsplash.com/photo-1607746882042-944635dfe10e?q=80&w=800&auto=format&fit=crop',
   },
   {
-    name: 'Founder Two',
+    name: 'Sanjay Kumar',
     role: 'Co-founder & CTO',
-    image: 'https://picsum.photos/seed/f2/600/700',
+    image: 'https://images.unsplash.com/photo-1603415526960-f7e0328b3d35?q=80&w=800&auto=format&fit=crop',
   },
   {
-    name: 'Founder Three',
+    name: 'Rahul Mehta',
     role: 'Co-founder & COO',
-    image: 'https://picsum.photos/seed/f3/600/700',
+    image: 'https://images.unsplash.com/photo-1552058544-f2b08422138a?q=80&w=800&auto=format&fit=crop',
   },
   {
-    name: 'Founder Four',
+    name: 'Priya Sharma',
     role: 'Co-founder',
-    image: 'https://picsum.photos/seed/f4/600/700',
+    image: 'https://images.unsplash.com/photo-1580489944761-15a19d654956?q=80&w=800&auto=format&fit=crop',
   },
   {
-    name: 'Founder Five',
+    name: 'Ananya Iyer',
     role: 'Founding Team',
-    image: 'https://picsum.photos/seed/f5/600/700',
+    image: 'https://images.unsplash.com/photo-1598550880863-4e8aa3d0edb4?q=80&w=800&auto=format&fit=crop',
   },
 ];
 
@@ -32,30 +33,17 @@ const Founders: React.FC = () => {
   return (
     <section
       id="founders"
-      className="
-        pt-6          /* ✅ SMALL SPACE (MOBILE) */
-        sm:pt-10
-        md:pt-16
-
-        pb-16 md:pb-24
-        bg-white
-        text-gray-900
-      "
+      className="pt-14 md:pt-20 pb-16 md:pb-24 bg-white text-gray-900"
     >
-      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+      {/* STANDARDIZED TEXT */}
+      <ContentBlock
+        label="Leadership"
+        title="Founders"
+        description="Building climate solutions with science, integrity, and long-term impact."
+      />
 
-        {/* Heading */}
-        <div className="mb-8 md:mb-16">
-          <span className="text-forest-800 font-semibold tracking-wider text-sm uppercase">
-            Leadership
-          </span>
-          <h2 className="text-3xl md:text-4xl font-bold mt-2">
-            Founders
-          </h2>
-          <div className="w-16 h-1 bg-amber-400 mt-3 rounded-full"></div>
-        </div>
-
-        {/* Cards */}
+      {/* FOUNDERS GRID */}
+      <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 mt-12 md:mt-16">
         <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8">
           {founders.map((founder, index) => (
             <div
@@ -81,7 +69,6 @@ const Founders: React.FC = () => {
             </div>
           ))}
         </div>
-
       </div>
     </section>
   );

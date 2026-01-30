@@ -36,13 +36,25 @@ const Navbar: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="flex items-center justify-between h-16">
 
-            {/* Logo */}
+            {/* BRAND LOGO + NAME */}
             <a href="#hero" className="flex items-center gap-2">
-              <div className="w-8 h-8 bg-emerald-700 rounded-sm flex items-center justify-center">
-                <span className="text-white font-bold text-lg">T</span>
-              </div>
-              <span className="text-white font-bold text-xl">
-                TerraForm
+              {/* Leaf Logo */}
+              <svg
+                width="22"
+                height="22"
+                viewBox="0 0 24 24"
+                fill="none"
+                className="text-emerald-400"
+              >
+                <path
+                  d="M4 14c8-1 10-7 16-10-1 10-6 16-14 16-1 0-2 0-2-6z"
+                  fill="currentColor"
+                />
+              </svg>
+
+              {/* Brand Name */}
+              <span className="text-white font-semibold text-xl tracking-wide">
+                pgs-varaha
               </span>
             </a>
 
@@ -59,7 +71,7 @@ const Navbar: React.FC = () => {
               ))}
             </div>
 
-            {/* Mobile Menu Button (RIGHT, LIGHT COLOR) */}
+            {/* Mobile Menu Button */}
             <button
               className="md:hidden text-slate-100"
               onClick={() => setOpen(true)}
@@ -70,7 +82,7 @@ const Navbar: React.FC = () => {
         </div>
       </nav>
 
-      {/* FULL SCREEN MOBILE MENU (LIGHT BG) */}
+      {/* FULL SCREEN MOBILE MENU */}
       <div
         className={`
           fixed inset-0 z-[60]

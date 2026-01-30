@@ -11,7 +11,7 @@ const Footer: React.FC = () => {
               <div className="w-6 h-6 bg-white rounded-sm flex items-center justify-center">
                 <span className="text-stone-900 font-bold text-sm">T</span>
               </div>
-              <span className="font-bold text-lg tracking-tight">TerraForm</span>
+              <span className="font-bold text-lg tracking-tight">pgs-varaha</span>
             </div>
             <p className="text-gray-400 text-sm leading-relaxed max-w-xs">
               Restoring the planet through scalable, nature-based solutions and advanced technology.
@@ -47,7 +47,7 @@ const Footer: React.FC = () => {
         </div>
 
         <div className="border-t border-gray-800 pt-8 flex flex-col md:flex-row justify-between items-center text-xs text-gray-500">
-          <p>&copy; {new Date().getFullYear()} TerraForm Climate Inc. All rights reserved.</p>
+          <p>&copy; {new Date().getFullYear()} pgs-varaha Climate Inc. All rights reserved.</p>
           <div className="flex gap-6 mt-4 md:mt-0">
             <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
             <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
